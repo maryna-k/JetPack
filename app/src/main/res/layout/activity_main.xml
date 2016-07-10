@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    tools:context="com.example.android.jetpack.MainActivity">
+
+    <TextView
+        android:id="@+id/improve"
+        android:layout_width="151.3dp"
+        android:layout_height="54.7dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="44.7dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="151.3dp"
+        android:gravity="center"
+        android:text="I want to improve my..."
+        android:textSize="21.3sp" />
+
+    <TextView
+        android:id="@+id/improve_proposing"
+        android:layout_width="171.3dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/improve"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Here are a couple suggestions to get you started with a small habit"
+        android:textSize="9.3sp" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/improve"
+        android:layout_marginTop="32dp"
+        android:animateLayoutChanges="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/upperRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/improve_lifestyle"
+                    style="@style/improveOptions"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Lifestyle" />
+
+                <TextView
+                    android:id="@+id/improve_health"
+                    style="@style/improveOptions"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Health" />
+
+                <TextView
+                    android:id="@+id/improve_learning"
+                    style="@style/improveOptions"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Learning" />
+
+                <TextView
+                    android:id="@+id/spiritual"
+                    style="@style/improveOptions"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Spiritual" />
+
+                <TextView
+                    android:id="@+id/mind"
+                    style="@style/improveOptions"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Mind" />
+
+                <TextView
+                    android:id="@+id/art"
+                    style="@style/improveOptions"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Art" />
+
+                <TextView
+                    android:id="@+id/brewing"
+                    style="@style/improveOptions"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Brewing" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cleaning"
+                    style="@style/improveOptions"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Cleaning" />
+
+                <TextView
+                    android:id="@+id/foreign_language"
+                    style="@style/improveOptions"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Foreign language" />
+
+                <TextView
+                    android:id="@+id/music"
+                    style="@style/improveOptions"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Music" />
+
+                <TextView
+                    android:id="@+id/reading"
+                    style="@style/improveOptions"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Reading" />
+
+                <TextView
+                    android:id="@+id/coding"
+                    style="@style/improveOptions"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Coding" />
+
+                <TextView
+                    android:id="@+id/sport"
+                    style="@style/improveOptions"
+                    android:background="@drawable/rounded_corners"
+                    android:text="Sport" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/improve_own"
+        android:layout_width="128.7dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/horizontalScroll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Alternatively, you may write your own habit"
+        android:textSize="9.3sp" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_next"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="103dp"
+        android:src="@drawable/steps_next"
+        app:elevation="4dp" />
+
+
+</RelativeLayout>
