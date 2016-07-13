@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">JetPack</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_health_suggestions">HealthSuggestionsActivity</string>
-    <string name="title_activity_lifestyle_suggestions">LifestyleSuggestionsActivity</string>
-    <string name="title_activity_main2">Main2Activity</string>
-    <string name="section_format">Hello World from section: %1$d</string>
-    <string name="title_activity_health_suggestion">HealthSuggestionActivity</string>
+
+    <string name="healthHeaderAfter"> <![CDATA[ “I want to improve my <b>health.</b> &quot;]]> </string>
+    <string name="healthExplanation"><![CDATA[ Small habits go like this: After I do this, I will do that. This is called a <b>cue</b> and an <b>intent</b>. Therefore...]]></string>
+    <string name="afterI">&quot;After I...&quot;</string>
+    <string name="Iwill">&quot;I will...&quot;</string>
+    <string name="healthHeader_page2">After I </string>
+    <string name="healthExplanation2"><![CDATA[Now that you’ve determined your cue, it’s time for an <b> intent. </b> So...]]></string>
+    <string name="youCanAdd"><![CDATA[You’ve determined your <b> cue </b> and your <b> intent! </b> Everything looking alright?]]></string>
+
 </resources>

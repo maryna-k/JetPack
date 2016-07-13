@@ -9,34 +9,27 @@
 
     <TextView
         android:id="@+id/improve"
-        android:layout_width="151.3dp"
-        android:layout_height="54.7dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="44.7dp"
-        android:layout_marginRight="44dp"
-        android:layout_marginTop="151.3dp"
-        android:gravity="center"
-        android:text="I want to improve my..."
-        android:textSize="21.3sp" />
+        style="@style/header"
+        android:layout_marginTop="90dp"
+        android:text="I want to improve my..." />
 
     <TextView
         android:id="@+id/improve_proposing"
-        android:layout_width="171.3dp"
-        android:layout_height="24dp"
+        style="@style/small_text_centered"
         android:layout_below="@id/improve"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Here are a couple suggestions to get you started with a small habit"
-        android:textSize="9.3sp" />
+        android:textColor="@color/textColorPrimary"/>
 
 
     <HorizontalScrollView
         android:id="@+id/horizontalScroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/improve"
-        android:layout_marginTop="32dp"
+        android:layout_below="@id/improve_proposing"
+        android:layout_marginTop="15dp"
         android:animateLayoutChanges="true"
         android:scrollbars="none">
 
@@ -145,23 +138,18 @@
 
     <TextView
         android:id="@+id/improve_own"
-        android:layout_width="128.7dp"
-        android:layout_height="24dp"
+        style="@style/small_text_centered"
         android:layout_below="@id/horizontalScroll"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:gravity="center"
+        android:layout_marginTop="20dp"
         android:text="Alternatively, you may write your own habit"
-        android:textSize="9.3sp" />
+        android:textColor="@color/textColorPrimary"/>
 
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_next"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        style="@style/fab"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="103dp"
         android:src="@drawable/steps_next"
         app:elevation="4dp" />
 

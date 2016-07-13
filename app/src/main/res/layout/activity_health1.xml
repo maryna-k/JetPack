@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/healthFirstScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HealthActivity1">
+    
+    <TextView
+        android:id="@+id/headerHealthAfter"
+        style="@style/header"
+        android:text="@string/healthHeaderAfter"/>
+
+    <TextView
+        android:id="@+id/healthAfterExplanation"
+        style="@style/small_text_centered"
+        android:layout_below ="@id/headerHealthAfter"
+        android:layout_marginTop="15dp"
+        android:text="@string/healthExplanation"/>
+
+    <TextView
+        android:id="@+id/healthAfterI"
+        android:layout_below="@id/healthAfterExplanation"
+        android:layout_marginTop="61.3dp"
+        android:text="@string/afterI"
+        style="@style/screen_text"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/afterI_suggestions"
+        android:layout_width="170.7dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/healthAfterI"
+        style="@style/screen_text"
+        android:textColorHint="@color/hint_color"
+        android:hint="Get out of bed"
+        android:drawableRight="@drawable/ic_arrow_drop_down_white_24dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2_prev"
+            style="@style/fab"
+            android:src="@drawable/steps_previous"
+            android:layout_marginRight="7dp"
+            app:elevation="4dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2_next"
+            style="@style/fab"
+            android:src="@drawable/steps_next"
+            android:layout_marginLeft="7dp"
+            app:elevation="4dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

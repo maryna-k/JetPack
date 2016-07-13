@@ -1,7 +1,6 @@
 package com.example.android.jetpack;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         lifeStyle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent lifestyleIntent = new Intent(MainActivity.this, LifeStyleSuggestionActivity.class);
+                Intent lifestyleIntent = new Intent(MainActivity.this, LifeStyleActivity1.class);
                 startActivity(lifestyleIntent);
             }
         });
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         health.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent healthIntent = new Intent(MainActivity.this, HealthSuggestionActivity.class);
+                Intent healthIntent = new Intent(MainActivity.this, HealthActivity1.class);
                 startActivity(healthIntent);
             }
         });
@@ -45,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         learning.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent learningIntent = new Intent(MainActivity.this, LearningSuggestionActivity.class);
+                Intent learningIntent = new Intent(MainActivity.this, LearningActivity1.class);
                 startActivity(learningIntent);
             }
         });

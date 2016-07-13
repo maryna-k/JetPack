@@ -15,10 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LifeStyleSuggestionActivity" />
-        <activity android:name=".HealthSuggestionActivity" />
-        <activity android:name=".LearningSuggestionActivity" />
-        <activity android:name=".WriteYourOwnActivity"></activity>
+        <activity android:name=".LifeStyleActivity1" />
+        <activity android:name=".HealthActivity1" />
+        <activity android:name=".LearningActivity1" />
+        <activity android:name=".WriteYourOwnActivity" />
+        <activity android:name=".HealthActivity2" />
+        <activity android:name=".HealthActivity3"></activity>
     </application>
 
 </manifest>
